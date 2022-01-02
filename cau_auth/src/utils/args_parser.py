@@ -8,7 +8,7 @@ import argparse
 
 
 def get_parse_res():
-    with open(os.path.join(root_path, 'statics/argparse_description.txt')) as reader:
+    with open(os.path.join(root_path, 'statics/argparse_description.txt'), encoding='utf8') as reader:
         parser = argparse.ArgumentParser(description=reader.read())
 
     parser.add_argument('-i', '--login', action="store_true", help='登录校园网')

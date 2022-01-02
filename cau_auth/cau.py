@@ -1,8 +1,7 @@
-#!/Users/ning/opt/anaconda3/bin/python3
 import os
 import sys
 
-root_path = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
+root_path = os.path.dirname(os.path.realpath(__file__))
 sys.path.append(root_path)
 from src.helper import init_helper
 from src.core import login

@@ -12,11 +12,11 @@ def create_config():
         raise FileExistsError('配置文件已经存在')
 
     # 复制配置文件
-    with open(os.path.join(root_path, 'statics/config_example.txt'), 'r') as reader:
+    with open(os.path.join(root_path, 'statics/config_example.txt'), 'r', encoding='utf8') as reader:
         config_example = reader.read()
         username = input('请输入你的用户名：')
         password = input('请输入你的密码：')
         config_example = config_example.replace('这里填你的用户名', username)
         config_example = config_example.replace('这里填你的密码', password)
-        with open(config_file_path, 'w') as writer:
+        with open(config_file_path, 'w', encoding='utf8') as writer:
             writer.write(config_example)
