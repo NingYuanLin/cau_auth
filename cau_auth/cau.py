@@ -36,7 +36,7 @@ def main():
             is_login = status_info_dict['login']
             if is_login == 1:
                 login_username = status_info_dict['username']
-                print(f'账号已经登陆，当前登陆的用户为:{login_username}')
+                print(f'账号已经登录，当前登录的用户为:{login_username}')
             else:
                 print('当前未登录')
         elif action == 'create_config':

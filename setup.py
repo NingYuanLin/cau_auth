@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='cau',
-    version='0.0.2',  # 版本号
+    version='0.0.3',  # 版本号
     description='通过命令行进行中国农业大学的校园网认证',
     author='nyl',
     author_email='c2605759123@163.com',

@@ -47,7 +47,7 @@ def login(username, password):
     is_login = status_info_dict['login']
     if is_login == 1:
         login_username = status_info_dict['username']
-        msg = f'账号已经登陆，当前登陆的用户为:{login_username}'
+        msg = f'账号已经登录，当前登录的用户为:{login_username}'
         return 0, msg
 
     auth_ip = real_auth_ip.get_real_auth_ip()
