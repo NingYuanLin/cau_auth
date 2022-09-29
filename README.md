@@ -3,6 +3,7 @@ cau 中国农业大学 校园网认证
 ```
 pip install cau
 ```
+🎉[golang版本已发布](https://github.com/NingYuanLin/cau_go)
 ## 功能 & 用途
 在没有图形化界面的电脑上（例如Linux和WSL），登录校园网是非常困难的，此程序可以通过命令行的方式来登录校园网  
 当然，在macos和windows上也是支持的，并且可能比手动在浏览器上操作要快一些
@@ -47,7 +48,5 @@ cau -o 或 cau --logout
 ## 常见问题
 1. 使用虚拟环境执行`pip install cau`，退出虚拟环境后，发现无法执行`cau`命令？  
 先在虚拟环境下，执行`which cau(macos & linux) or where(cmd in windows)`找到文件路径，再建立软链接到在环境变量里的目录  
-## TODO
-* 编写Golang版本
 
 **👏🏻欢迎提交Issue**
